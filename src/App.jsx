@@ -1,15 +1,14 @@
-import styled from 'styled-components'
+
 import './normalize.css'
+import Layout from './components/Layout';
 
 export default function App() {
   return (
-    <Main>
-      Hello Resume
-    </Main>
+     <Layout>
+       Schimb textul
+     </Layout>
+    
   )
 }
 
 
-const Main = styled.main`
-  color: blue;
-`
