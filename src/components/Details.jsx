@@ -23,7 +23,8 @@ const Container =styled.div `
   
   margin-top: 43px;
   margin-left: 53px;
-`
+  margin-bottom: 45px;
+`;
 
 const Name =styled.span `
   color: #000;
@@ -32,7 +33,7 @@ const Name =styled.span `
   font-style: normal;
   font-weight: 900;
   line-height: 140%; /* 50.4px */
-`
+`;
 
 const Title =styled.span `
   color: #000;
@@ -42,7 +43,7 @@ const Title =styled.span `
   font-weight: 500;
   line-height: 150%; /* 30px */
   padding-bottom:6px;
-`
+`;
 
 const Contact =styled.span `
   color: #0B0B0B;
@@ -52,10 +53,10 @@ const Contact =styled.span `
   font-weight: 500;
   line-height: 150%; /* 21px */
   
-  `
+  `;
 
 const ContactRow =styled.div `
   display: flex;
   flex-direction; row;
   gap: 7px;
-`
+`;
