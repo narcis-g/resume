@@ -1,27 +1,25 @@
 import styled from 'styled-components'
 
 
-const ExperienceCard = () => {
+const ExperienceCard = (props) => {
   return (
     <Container>
       <SpacedColumn>
-        <Title>Developer</Title>
-        <Period>Yesterday-Today</Period>
+        <Title>{props.title}</Title>
+        <Period>{props.start} - {props.end}</Period>
       </SpacedColumn>
       <SpacedColumn>
         <Company>
-          <CompanyLogo src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"></CompanyLogo>
-          <CompanyName>Comp Inc</CompanyName>
+          <CompanyLogo src={props.companyLogo}></CompanyLogo>
+          <CompanyName>{props.companyName}</CompanyName>
         </Company>
-        <Location>Romania</Location>
+        <Location>{props.location}</Location>
       </SpacedColumn>
       <BulletPoints>
-        <Point>Programing</Point>
-        <Point>Programing</Point>
-        <Point>Programing</Point>
-        <Point>Programing</Point>
+        {props.bulletPoints?.map(point => (
+          <Point>{point}</Point>
+        ))}
       </BulletPoints>
-      
     </Container>
   )
 }
@@ -49,7 +47,7 @@ const SpacedColumn = styled.div`
  align-items: center;
 `;
 
-const Title =styled.span`
+const Title = styled.span`
   color: #000;
   font-family: Lato;
   font-size: 14px;
@@ -58,7 +56,7 @@ const Title =styled.span`
   line-height: normal;
 `;
 
-const Period =styled.span`
+const Period = styled.span`
   color: #595959;
   text-align: right;
   font-family: 'Source Sans 3';
@@ -68,7 +66,7 @@ const Period =styled.span`
   line-height: 140%; /* 18.2px */
 `;
 
-const Company = styled.div `
+const Company = styled.div`
  display: flex;
  flex-direction: row;
  gap: 8px;
@@ -76,7 +74,7 @@ const Company = styled.div `
  
 `;
 
-const CompanyName =styled.span`
+const CompanyName = styled.span`
   color: #000;
   font-family: Lato;
   font-size: 14px;
@@ -100,7 +98,7 @@ const Location = styled.span`
   line-height: normal;
 `;
 
-const BulletPoints = styled.ul `
+const BulletPoints = styled.ul`
   columns: 2;
 `;
 

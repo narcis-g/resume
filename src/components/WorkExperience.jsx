@@ -7,9 +7,60 @@ const WorkExperience = () => {
     <div>
       <Title>Work Experience</Title>
       <ExperienceList>
-        <ExperienceCard></ExperienceCard>
-        <ExperienceCard></ExperienceCard>
-        <ExperienceCard> </ExperienceCard>
+        <ExperienceCard
+          title="Developer"
+          start="2021"
+          end="current"
+          companyLogo="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
+          companyName="CompInc"
+          location="Romania"
+          bulletPoints={[
+            'Tech',
+            'Eat',
+            'Repeat'
+          ]}
+        />
+
+        <ExperienceCard
+          title="Tech Lead"
+          start="September 2022"
+          end="current"
+          companyLogo="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
+          companyName="Software company"
+          location="Romania"
+          bulletPoints={[
+            'Visual Design',
+            'Prototyping',
+            'UX Researching',
+            'Front-end Dev'
+          ]} />
+        <ExperienceCard
+          title="Senior Software Developer"
+          start="March 2022"
+          end="current"
+          companyLogo="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
+          companyName="Software company"
+          location="Romania"
+          bulletPoints={[
+            'Visual Design',
+            'Prototyping',
+            'UX Researching',
+            'Web / Mobile',
+            'Front-end Dev'
+          ]} />
+        <ExperienceCard 
+          title="Softare Developer"
+          start="June 2020"
+          end="current"
+          companyLogo="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
+          companyName="Software company"
+          location="Romania"
+          bulletPoints={[
+            'Visual Design',
+            'Prototyping',
+            'UX Researching',
+            'Web / Mobile'
+          ]} />
       </ExperienceList>
 
     </div>
