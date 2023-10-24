@@ -35,6 +35,7 @@ const Title = styled.div`
   line-height: normal;
   margin-left:43px;
   margin-top:30px;
+  margin-bottom:23px;
 
 `
 

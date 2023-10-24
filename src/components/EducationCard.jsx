@@ -21,9 +21,9 @@ const Container = styled.div`
   align-items: flex-start;
   gap: 6px;
   width:200px;
-  height:80px;
+  
   margin-left:43px;
-  margin-top:23px;
+  
   
   border: 3px solid #211814;
   background: #FFE9A8;
