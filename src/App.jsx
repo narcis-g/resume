@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Details from './components/Details';
 import WorkExperience from './components/WorkExperience';
 import Avatar from './components/Avatar'
+import Education from './components/Education'
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
 
        right = {
          <div>
-           <Avatar></Avatar>  
+           <Avatar></Avatar> 
+           <Education></Education>
          </div>
        }
        />
