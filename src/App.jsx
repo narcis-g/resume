@@ -3,6 +3,7 @@ import './normalize.css'
 import Layout from './components/Layout';
 import Details from './components/Details';
 import WorkExperience from './components/WorkExperience';
+import Avatar from './components/Avatar'
 
 export default function App() {
   return (
@@ -16,7 +17,9 @@ export default function App() {
        }
 
        right = {
-         <div>right side</div>
+         <div>
+           <Avatar></Avatar>  
+         </div>
        }
        />
        
