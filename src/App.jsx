@@ -5,6 +5,7 @@ import Details from './components/Details';
 import WorkExperience from './components/WorkExperience';
 import Avatar from './components/Avatar'
 import Education from './components/Education'
+import Skills from './components/Skills'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
          <div>
            <Avatar></Avatar> 
            <Education></Education>
+           <Skills></Skills>
          </div>
        }
        />
